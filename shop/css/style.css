@@ -1,0 +1,434 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: poppins;
+}
+
+.container {
+    max-width: 1200px;
+}
+
+@font-face {
+    font-family: poppins;
+    src: url(../font/Poppins-Light.ttf)
+}
+
+.address {
+    font-family: poppins;
+    font-size: 12px;
+    background-color: black;
+}
+
+.car3 {
+    top: 12px;
+    right: 10px;
+}
+
+.search_sp:focus {
+    box-shadow: none;
+}
+
+
+/* navbar */
+
+.navbar-light {
+    background-color: white!important;
+}
+
+.nav-item:hover {
+    color: red!important;
+    transition: 0.1s;
+}
+
+.navbar-light .navbar-nav .nav-item:hover .nav-link {
+    color: red!important;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link {
+    color: black;
+    font-size: 12px;
+}
+
+.navbar-light .navbar-nav .nav-item .bg-white .container .row .position-relative .text-white {
+    top: 20%;
+    left: 25%;
+    z-index: 2;
+    padding: 5%;
+    transition: 0.1s;
+    opacity: 0;
+}
+
+.navbar-light .navbar-nav .nav-item .bg-white .container .row .position-relative img {
+    z-index: 0;
+}
+
+.navbar-light .navbar-nav .nav-item .bg-white .container .row .col-xl-4:hover .position-relative .text-white {
+    top: 38%;
+    left: 25%;
+    z-index: 2;
+    padding: 5%;
+    transition: 0.1s;
+    opacity: 1;
+}
+
+.navbar-light .navbar-nav .nav-item .bg-white .container .row .col-xl-4 .position-relative .black::after {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0%;
+    z-index: 1;
+    opacity: 0;
+    box-sizing: border-box;
+    background-color: rgba(15, 15, 15, 0.452);
+    transition: 0.1s;
+    content: '';
+}
+
+.navbar-light .navbar-nav .nav-item .bg-white .container .row .col-xl-4:hover .position-relative .black::after {
+    opacity: 1;
+    transition: 0.1s;
+}
+
+.navbar-light .navbar-nav .nav-item .peatures {
+    left: -85%;
+}
+
+.navbar-light .navbar-nav .nav-item .bg-white .container .row .col-xl-4:hover h3 {
+    color: red;
+}
+
+.navbar-light .navbar-nav .nav-item .bg-white {
+    visibility: hidden;
+    transition: 0.1s;
+    z-index: 1;
+}
+
+.navbar-light .navbar-nav .nav-item:hover .bg-white {
+    visibility: visible;
+    transition: 0.1s;
+}
+
+.navbar-light .navbar-nav .nav-item .bg-white .container .row .col-xl-3 .d-block:hover {
+    color: red;
+    transition: 0.1s;
+}
+
+.navbar-light .navbar-nav .nav-item .shop {
+    left: -284%;
+}
+
+.navbar-light .navbar-nav .nav-item .collection .container ul .ngang::before {
+    content: "-";
+    position: absolute;
+    left: -5px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.navbar-light .navbar-nav .nav-item .collection .container ul .ngang:hover>a {
+    padding-left: 2em;
+    color: red;
+    transition: 0.1s;
+}
+
+.navbar-light .navbar-nav .nav-item .collection .container ul .ngang:hover::before {
+    content: "-";
+    position: absolute;
+    left: 10px;
+    opacity: 1;
+    transition: 0.1s;
+}
+
+.navbar-light .navbar-nav .nav-item .collection .container ul .ngang .muiten::after {
+    content: ">";
+    display: inline-block;
+    float: right;
+}
+
+.navbar-light .navbar-nav .nav-item .collection .container ul .ngang .shopmen {
+    top: -13px;
+    right: -225px;
+}
+
+.navbar-light .navbar-nav .nav-item .collection .container ul .ngang .shopmen .ngang2 a::before {
+    content: "-";
+    position: absolute;
+    left: -5px;
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.navbar-light .navbar-nav .nav-item .collection .container ul .ngang .shopmen .ngang2 a:hover::before {
+    content: "-";
+    position: absolute;
+    left: 10px;
+    opacity: 1;
+    transition: 0.2s;
+    color: red;
+}
+
+.navbar-light .navbar-nav .nav-item .collection .container ul .ngang .shopmen {
+    visibility: hidden;
+}
+
+.navbar-light .navbar-nav .nav-item .collection .container ul .ngang:hover .shopmen {
+    visibility: visible;
+}
+
+.navbar-light .navbar-nav .nav-item .collection .container ul .ngang .shopmen .ngang2 a:hover {
+    padding-left: 2em!important;
+    transition: 0.2s;
+    color: red;
+}
+
+
+/* navbar */
+
+
+/* carosel */
+
+.carousel-indicators [data-bs-target] {
+    opacity: 1;
+}
+
+.carousel-indicators .active {
+    background-color: red!important;
+}
+
+.carousel {
+    z-index: 0;
+}
+
+
+/* carosel */
+
+.container .row .col-md-3 .align-items-center:hover .w-75 a {
+    color: red;
+}
+
+
+/* fashion */
+
+.fashion .container .topsale .gray .left {
+    width: 100px;
+    height: 2px;
+    background-color: gray;
+    position: absolute;
+    opacity: 0.2;
+    left: 40%;
+    top: 54%;
+}
+
+.fashion .container .topsale .gray .right {
+    width: 100px;
+    height: 2px;
+    background-color: gray;
+    position: absolute;
+    opacity: 0.2;
+    right: 38.5%;
+    top: 54%;
+}
+
+.fashion .container .row .col-sm-6 .row .faca .icon3 {
+    top: 30%;
+    left: 20%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.fashion .container .row .col-sm-6 .row .faca:hover .icon3 {
+    top: 35%;
+    left: 20%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.fashion .container .row .col-sm-6 .row .col-sm-12 .faca .icon3 {
+    top: 35%;
+    left: 39%;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.4s;
+}
+
+.fashion .container .row .col-sm-6 .row .col-sm-12 .faca:hover .icon3 {
+    top: 41%;
+    left: 39%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.fashion .container .row .col-sm-6 .faca a:hover {
+    color: #ff3c58;
+    transition: 0.4s;
+}
+
+.fashion .container .row .icon3 button:hover {
+    background: #ff3c58!important;
+    color: white;
+}
+
+.bg-women {
+    background: url(/img/bg.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.bg-women .text-center .text-2 .font-weight-bolder::before {
+    content: "";
+    width: 200px;
+    height: 2px;
+    position: absolute;
+    background-color: #fff;
+    bottom: 20%;
+    left: 43%;
+}
+
+.bg-women .text-center .row .col-sm-4 .item-3 a {
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+    transition: all 0.4s;
+}
+
+.bg-women .text-center .row .col-sm-4 .item-3:hover a {
+    background-color: #ff3c58!important;
+    color: white;
+    transition: all 0.4s;
+}
+
+.bg-women .text-center .row .col-sm-4 .item-3>div {
+    overflow: hidden;
+    transition: all 0.4s;
+}
+
+.bg-women .text-center .row .col-sm-4 .item-3:hover img {
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: all 0.4s;
+}
+
+.item-6 {
+    border-top: 1px solid #dbdbdb;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.item-6 .row .col-sm-2 img {
+    opacity: 0.4;
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.item-6 .row .col-sm-2:hover img {
+    opacity: 1;
+    transition: 0.4s;
+}
+
+.container-fluid .row .col-md-3 ul .add {
+    background: url(/img/add.png) no-repeat left center;
+}
+
+.container-fluid .row .col-md-3 ul li {
+    padding: 1em 0em 1em 3em;
+}
+
+.container-fluid .row .col-md-3 ul .phone {
+    background: url(/img/phone.png) no-repeat left center;
+}
+
+.container-fluid .row .col-md-3 ul .email {
+    background: url(/img/email.png) no-repeat left center;
+}
+
+.container-fluid .row .col-md-3 ul .watch {
+    background: url(/img/watch.png) no-repeat left center;
+}
+
+.container-fluid .row .col-md-3 ul {
+    color: #494848;
+}
+
+.container-fluid .row .col-md-3 ul .ngang a {
+    color: #777575;
+}
+
+.ngang::before {
+    content: "-";
+    position: absolute;
+    left: -5px;
+    opacity: 0;
+    transition: 0.1s;
+}
+
+.ngang:hover::before {
+    content: "-";
+    position: absolute;
+    left: 10px;
+    opacity: 1;
+    transition: 0.1s;
+    color: red;
+}
+
+.ngang:hover a {
+    padding-left: 2em;
+    color: red!important;
+    transition: 0.1s;
+}
+
+.login .sign-up .d-flex input {
+    border-radius: 50px;
+    height: 45px;
+    padding: 10px 0px 10px 15px;
+}
+
+.login .sign-up .d-flex button {
+    border-radius: 50px;
+    color: white;
+    font-weight: bold;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    height: 100%;
+    background-color: #ff3c58;
+    max-width: 35%;
+}
+
+.login .sign-up .d-flex input:focus {
+    border-color: #ced4da;
+}
+
+.fl-us {
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.fl-us .row .col-8 .icon-6 button:hover {
+    background-color: #ff3c58!important;
+    border-color: #ff3c58!important;
+    color: #fff!important;
+}
